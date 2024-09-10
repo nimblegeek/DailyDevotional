@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Devotional</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="/static/css/styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="container mx-auto px-4">
+        <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+            <div class="p-8">
+                <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">Daily Devotional</h1>
+                <p class="text-center text-gray-600 mb-6">Select your current mood:</p>
+                <div class="flex justify-center space-x-4 mb-8">
+                    <button class="mood-btn" data-mood="happy">😊 Happy</button>
+                    <button class="mood-btn" data-mood="sad">😢 Sad</button>
+                    <button class="mood-btn" data-mood="anxious">😰 Anxious</button>
+                    <button class="mood-btn" data-mood="grateful">🙏 Grateful</button>
+                    <button class="mood-btn" data-mood="angry">😠 Angry</button>
+                </div>
+                <div id="devotional" class="hidden">
+                    <div class="mb-6">
+                        <h2 class="text-xl font-semibold text-gray-800 mb-2">Bible Quote:</h2>
+                        <p id="quote" class="text-gray-600 italic"></p>
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-2">Prayer:</h2>
+                        <p id="prayer" class="text-gray-600"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
